@@ -1,6 +1,12 @@
 package com.test.stringbuffer;
 
-public class Test {
+/**
+ * 字符串拼接的例子
+ * stringbuilder.append最快
+ * @author Steve
+ *
+ */
+public class StringContactTest {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
