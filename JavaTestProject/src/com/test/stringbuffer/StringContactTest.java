@@ -3,6 +3,8 @@ package com.test.stringbuffer;
 /**
  * 字符串拼接的例子
  * stringbuilder.append最快
+ * StringBuffer 线程安全
+ * StringBuilder 线程不安全
  * @author Steve
  *
  */
