@@ -43,11 +43,6 @@ public class CopyOfTest2 {
 
 		printArrays(plistlast, "plistlast by Arrays.copyOf(plist, plist.length)");
 		
-		Vector<String> vs = new Vector<String>();
-		System.out.println(vs.isEmpty() + " " + vs.capacity());
-		
-		List<String> ls = new ArrayList<String>();
-		System.out.println(ls.isEmpty() + " "+ ls.size());
 		
 
 	}
