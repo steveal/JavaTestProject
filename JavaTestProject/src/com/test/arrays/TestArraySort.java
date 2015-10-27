@@ -3,6 +3,7 @@ package com.test.arrays;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 import org.junit.Before;
@@ -11,18 +12,14 @@ import org.junit.Test;
 import com.test.arrays.Employee.Position;
 
 public class TestArraySort {
-
+	
+	public int comparison=0;
 	Employee boss;
 	Employee manager;
 	Employee staff1;
 	Employee staff2;
 	Employee staff3;
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-	}
-
+	 
 	@Before
 	public void init() {
 		boss = new Employee(1, "boss", Position.Boss);
