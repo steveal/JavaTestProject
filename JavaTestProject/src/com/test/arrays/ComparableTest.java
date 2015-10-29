@@ -2,6 +2,7 @@ package com.test.arrays;
 
 import java.util.Comparator;
 
+import org.apache.commons.lang3.builder.CompareToBuilder;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -44,6 +45,13 @@ public class ComparableTest {
 		Person p1 = new Person("p1");
 		Person p2 = new Person("p2");
 		System.out.println(compare(p1,p2));
+	}
+	
+	@Test(expected=ClassCastException.class)
+	public void unComparaeToBuilderClass() {
+		Person p1 = new Person("p1");
+		Person p2 = new Person("p2");
+		System.out.println(new CompareToBuilder().append(p1, p2));
 	}
 	
 	@Test
