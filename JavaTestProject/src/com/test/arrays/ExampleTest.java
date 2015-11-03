@@ -5,9 +5,16 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Vector;
 
+import org.junit.Test;
+
 public class ExampleTest {
 	
-	public static void main(String[] args) {
+	/**
+	 * 需要跟踪调试，发现Vector,和List初始空时，都是初始化一个10位的数组
+	 */
+	@Test
+	public void InitSize() {
+		System.out.println("ExampleTest.InitSize()");
 		Vector<String> vs = new Vector<String>();
 		System.out.println(vs.isEmpty() + " " + vs.capacity());
 		
@@ -26,5 +33,20 @@ public class ExampleTest {
 		 System.out.println(ilist.size());
 		 
 		 
+	}
+	
+	@Test
+	public void listremove() {
+		System.out.println("ExampleTest.listremove()");
+		ArrayList<String> as = new ArrayList<String>();
+		as.add("a");
+		as.add("b");
+		as.add("c");
+		as.add("d");
+		as.add("e");
+		while(as.size()>0) {
+			String s = as.remove(0);
+			System.out.println(s);
+		}
 	}
 }
