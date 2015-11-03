@@ -20,12 +20,13 @@ class TxtThread implements Runnable {
 			while (num > 0) {
 
 				try {
-					Thread.sleep(1);
+					Thread.sleep(10);
 				} catch (Exception e) {
 					e.getMessage();
 				}
 				System.out.println(Thread.currentThread().getName() + " this is " + num--);
 			}
 		}
+		System.out.println(Thread.currentThread().getName() + " done!!");
 	}
 }
