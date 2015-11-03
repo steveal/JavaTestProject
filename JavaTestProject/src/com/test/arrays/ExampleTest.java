@@ -21,6 +21,10 @@ public class ExampleTest {
 		List<String> ls = new ArrayList<String>();
 		System.out.println(ls.isEmpty() + " "+ ls.size());
 		
+	}
+	
+	@Test 
+	public void  AsListTest(){
 		List<String> stooges = Arrays.asList("Larry", "Moe", "Curly");
 		 System.out.println(stooges.size());
 		 
@@ -31,8 +35,6 @@ public class ExampleTest {
 		 int[] iarrays = {1,2,3,4};
 		 List ilist = Arrays.asList(iarrays);
 		 System.out.println(ilist.size());
-		 
-		 
 	}
 	
 	@Test
