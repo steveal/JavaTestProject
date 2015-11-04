@@ -16,14 +16,7 @@ public class slf4jtest {
 	
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		//Test TagNode
-//		TagNode tagNode = new TagNode();
-//		tagNode.setText("<div>ppppp</div>");
-//		System.out.println(tagNode.getText());
-//		System.out.println(tagNode.toHtml());
-		
-//		System.out.println(logger.getName());
+
 		System.out.println(logger.getClass().getName());
 		logger.trace("test.main() trace");
 		logger.info("test.main() info");
@@ -58,7 +51,9 @@ public class slf4jtest {
 	    ClassLoader testClassLoader = slf4jtest.class.getClassLoader();
 	    Enumeration<URL> eurl;
 		try {
-			eurl = testClassLoader.getResources("com/book/book.class");
+
+			eurl = testClassLoader.getResources("com/test/logthirdpart/slf4jtest.class");
+//			eurl = testClassLoader.getResources("com.test.logthirdpart.slf4jtest.class");
 			while(eurl.hasMoreElements()) {
 				URL path = (URL)eurl.nextElement();
 				System.out.println(path.getPath());
