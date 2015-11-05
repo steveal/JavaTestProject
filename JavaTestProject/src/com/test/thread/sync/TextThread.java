@@ -18,7 +18,6 @@ class TxtThread implements Runnable {
 	public void run() {
 		synchronized (str) {
 			while (num > 0) {
-
 				try {
 					Thread.sleep(10);
 				} catch (Exception e) {

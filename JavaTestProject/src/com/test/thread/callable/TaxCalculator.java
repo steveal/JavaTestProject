@@ -24,6 +24,7 @@ public class TaxCalculator implements Callable<Integer> {
 	public static void main(String[] args) throws InterruptedException, ExecutionException {
 		ExecutorService es = Executors.newSingleThreadExecutor();
 		Future<Integer> future = es.submit(new TaxCalculator(100));
+		es.shutdown();
 		int i = 1;
 		while(!future.isDone()) {
 			TimeUnit.MILLISECONDS.sleep(200);
@@ -32,7 +33,7 @@ public class TaxCalculator implements Callable<Integer> {
 		}
 		System.out.println("tax calculate finished, tax is : " + future.get() + " i:" + i);
 		
-		es.shutdown();
+		
 	}
 
 }
