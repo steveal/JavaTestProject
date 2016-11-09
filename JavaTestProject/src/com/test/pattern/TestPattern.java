@@ -25,6 +25,9 @@ public class TestPattern {
 		test9();
 	}
 
+	/**
+	 * basic
+	 */
 	public static void test1() {
 		String text = "This is the text to be searched " + "for occurrences of the http:// pattern.";
 		String pattern = ".*http://.*";
@@ -37,6 +40,9 @@ public class TestPattern {
 		System.out.println(pattern2 + "match : " + m2);
 	}
 
+	/**
+	 * basic2
+	 */
 	public static void test2() {
 		String text = "This is the text to be searched " + "for occurrences of the http:// pattern.";
 		String patternString = ".*hTTp://.*";
