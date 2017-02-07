@@ -6,7 +6,7 @@ public class Add extends Calculator {
 	}
 	
 	public Add(int _i,int _j) {
-		
+		super(_i,_j);
 	}
 	
 	public static void main(String[]  args) {
