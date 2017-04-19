@@ -17,7 +17,6 @@ public class RandomTest {
 			System.out.println("第 " + i + "次: " + r.nextInt());
 		}
 		Add a = new Add(1, 2);
-
 	}
 
 }
