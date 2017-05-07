@@ -1,2 +1,2 @@
 JavaTestProject  
-[![Github All Releases](https://img.shields.io/github/downloads/atom/atom/total.svg)]()
+[![Github All Releases](https://img.shields.io/github/downloads/steveal/JavaTestProject/total.svg)]()
