@@ -21,8 +21,8 @@ import java.io.IOException;
 
           Properties props = new Properties();
 ///src/main/java/com/test/jedis/pushpop/
-         props.load(MyJedisPool.class.getResourceAsStream("redis.properties"));
-
+//         props.load(MyJedisPool.class.getResourceAsStream("redis.properties"));
+         props.load(MyJedisPool.class.getClassLoader().getResourceAsStream("com/test/jedis/pushpop/redis.properties"));
                  //创建jedis池配置实例  
 
                  JedisPoolConfig config = new JedisPoolConfig();   
